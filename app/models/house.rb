@@ -1,4 +1,4 @@
-class WesterosiHouse
+class House
   attr_reader :url, :name, :region, :coat_of_arms, :words, :titles, :seats, :current_lord, :heir, :overlord,
 :founded, :founder, :died_out, :ancestral_weapons, :cadet_branches, :sworn_members
 
@@ -86,6 +86,6 @@ class WesterosiHouse
   end
 
   def get_house_data
-    @house_data ||= WesterosiHouseCall.new.fetch_data
+    @house_data ||= HouseCall.new.fetch_data
   end
 end

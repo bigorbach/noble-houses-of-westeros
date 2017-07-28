@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resource :home, only: [:show]
 
   resources :houses, only: [:index, :show]
+
+  root 'houses#index'
 end
