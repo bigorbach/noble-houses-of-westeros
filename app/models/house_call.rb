@@ -1,4 +1,4 @@
-class WesterosiHouseCall
+class HouseCall
   include HTTParty
   base_url 'https://anapioficeandfire.com/api/houses/'
 
